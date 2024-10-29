@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Edrian | Projects</title>
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/EdrianRosero/EdrianRosero.github.io/refs/heads/main/img/logo.png"
+        type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #F1F1F1, #808080);
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        .navbar-nav a {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .w-100 {
+            height: 100vh;
+        }
+
+        .navbar-toggler {
+            padding: 1px 5px;
+            font-size: 18px;
+            line-height: 0.3;
+            background: #fff;
+        }
+
+        .navbar-shadow {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+        }
+
+
+        .about{
+            min-height: 100vh;
+            position: relative;
+            display: table;
+            width: 100%;
+            height: auto;
+            padding-top: 8rem;
+            padding-bottom: 2rem;
+        }
+
+        .about h1 {
+            font-size: 4rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .bounce {
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(5px);
+            }
+
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        .navbar-logo {
+            animation: leftSideAni 1s ease forwards;
+        }
+
+        .navbar-link {
+            animation: leftSideAni 1s ease forwards; 
+        }
+
+        .about-h3-animation {
+            animation: leftSideAni 1s ease forwards; 
+        }
+
+        @keyframes leftSideAni {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .about-h1-animation {
+            animation: topSideAni 1s ease forwards;
+        }
+
+        @keyframes topSideAni {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .card {
+                margin-bottom: 30px;
+            }
+
+            .img-area img {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .card {
+                margin-bottom: 30px;
+            }
+
+            .section-header h2 {
+                font-size: 30px;
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-shadow">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <a href="404 Not Found.html">
+                    <img src="https://raw.githubusercontent.com/EdrianRosero/EdrianRosero.github.io/refs/heads/main/img/logo.png"
+                        alt="Logo" style="height:50px;" class="navbar-logo" />
+                </a>
+                <a class="nav-link ms-2 fw-bold text-uppercase fs-5 navbar-link"  style="color:#D70040" href="404 Not Found.html">Back to Home</a>
+            </div>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About-->
+    <section class="about d-flex align-items-center" id="about">
+        <div class="container px-4 px-lg-5 text-center">
+            <h1 class="mb-1 bounce about-h1-animation" style="color:#D70040">Project Page</h1>
+            <h3 class="mb-5 about-h3-animation"><em>Compilation of Coursework for System Administration and Maintenance</em></h3>
+            <a class="btn btn-dark" href="#projects">View Works</a>
+        </div>
+    </section>
+
+
+    <!-- Projects-->
+    <section class="project section-padding" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2 class="display-5 fw-bold text-dark">Projects</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <a href="https://drive.google.com/file/d/1lB9JeNSOpO_K4qn68NHh3ku7KzjzBuZr/view" class="text-decoration-none text-white">
+                            <div class="card-body">
+                                <div class="img-area mb-4"><img alt="" class="img-fluid"
+                                    src="https://raw.githubusercontent.com/EdrianRosero/EdrianRosero.github.io/refs/heads/main/img/card1.jpeg">
+                                </div>
+                                <h3 class="card-title">SAM A01</h3>
+                                <p class="lead">A tri-fold A4 brochure that showcases the product's attributes, properties, and characteristics.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <a href="SAM 02/index.html" class="text-decoration-none text-white">
+                            <div class="card-body">
+                                <div class="img-area mb-4"><img alt="" class="img-fluid"
+                                    src="https://raw.githubusercontent.com/EdrianRosero/EdrianRosero.github.io/refs/heads/main/SAM%2002/img/slide2.jpg">
+                                </div>
+                                <h3 class="card-title">SAM A02</h3>
+                                <p class="lead">A comprehensive webpage that showcases the country of China.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <a href="#about" class="text-decoration-none text-white">
+                            <div class="card-body">
+                                <div class="img-area mb-4"><img alt="" class="img-fluid"
+                                    src="https://raw.githubusercontent.com/EdrianRosero/EdrianRosero.github.io/refs/heads/main/img/card3.jpeg">
+                                </div>
+                                <h3 class="card-title">SAM A03</h3>
+                                <p class="lead"> A dedicated webpage that showcases a collection of SAM projects.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
