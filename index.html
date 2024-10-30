@@ -72,17 +72,27 @@
             transform: scale(1.05);
         }
 
-        .bounce {
-            animation: bounce 1s infinite alternate;
+        .about-h1-animation {
+            animation: topSideAni 1s ease forwards, bounce 1s 1s infinite alternate;
+        }
+
+        @keyframes topSideAni {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
 
         @keyframes bounce {
             from {
-                transform: translateY(5px);
+                transform: translateY(0);
             }
-
             to {
-                transform: translateY(-10px);
+                transform: translateY(-25px);
             }
         }
 
@@ -108,22 +118,7 @@
                 opacity: 1;
             }
         }
-
-        .about-h1-animation {
-            animation: topSideAni 1s ease forwards;
-        }
-
-        @keyframes topSideAni {
-            0% {
-                transform: translateY(-100px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
+        
         @media only screen and (min-width: 768px) and (max-width: 991px) {
             .card {
                 margin-bottom: 30px;
@@ -182,7 +177,7 @@
     <!-- About-->
     <section class="about d-flex align-items-center" id="about">
         <div class="container px-4 px-lg-5 text-center">
-            <h1 class="mb-1 bounce about-h1-animation" style="color:#D70040">Project Page</h1>
+            <h1 class="mb-1 about-h1-animation" style="color:#D70040">Project Page</h1>
             <h3 class="mb-5 about-h3-animation"><em>Compilation of Coursework for System Administration and Maintenance</em></h3>
             <a class="btn btn-dark" href="#projects">View Works</a>
         </div>
