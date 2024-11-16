@@ -49,8 +49,8 @@
 
         .card img {
             border-radius: 15px 15px 0 0;
-            max-width: 300px;
-            max-height: 250px;
+            max-width: 370px;
+            max-height: 280px;
         }
 
         .card-title {
@@ -59,6 +59,27 @@
             margin-bottom: 15px;
             color: #D70040;
             font-weight: bold;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .btn {
+            transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .btn:hover {
+            background-color: #2e2e2e;
+        }
+
+        .btn:active {
+            transform: translateY(5px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -71,7 +92,7 @@
     </header>
 
     <div class="container">
-        <div class="card mx-auto" style="max-width: 300px;">
+        <div class="card mx-auto" style="max-width: 370px;">
             <img id="characterImage" class="card-img-top" alt="Character Image">
             <div class="card-body">
                 <h2 id="characterName" class="card-title"></h2>
