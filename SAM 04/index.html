@@ -82,7 +82,7 @@
         <div class="row mb-4">
             <div class="col-12">
                 <input type="text" id="searchInput" class="form-control" placeholder="Enter Character Name"
-                    oninput="searchCards()"/>
+                    oninput="searchCards()" />
             </div>
         </div>
     </div>
@@ -153,12 +153,15 @@
                         character.image || "https://via.placeholder.com/150";
                     col.innerHTML = `
                         <div class="card gallery-item shadow-sm">
-                            <img src="${imageUrl}" class="card-img-top" alt="${character.name}">
+                            <a href="view.html?id=${character.id}">
+                                <img src="${imageUrl}" class="card-img-top" alt="${character.name}">
+                            </a>
                             <div class="card-body">
                                 <h5 class="card-title">${character.name}</h5>
                             </div>
                         </div>
                     `;
+
                     gallery.appendChild(col);
                 });
             }
