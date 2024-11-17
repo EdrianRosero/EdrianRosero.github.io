@@ -26,10 +26,10 @@
             padding: 100px 0;
         }
 
-        /* .navbar-nav a {
-            text-transform: uppercase;
-            font-weight: bold;
-        } */
+        .navbar-nav a:hover {
+            color: #D70040;
+            transform: scale(1.07);
+        }
 
         .w-100 {
             height: 100vh;
@@ -56,12 +56,6 @@
             padding-bottom: 2rem;
         }
 
-        .about h1 {
-            font-size: 4rem;
-            margin: 0;
-            padding: 0;
-        }
-
         .card {
             transition: transform 0.3s;
         }
@@ -70,7 +64,9 @@
             transform: scale(1.05);
         }
 
-        .about-h1-animation {
+        .about-h1-animation,
+        .project-h1-animation {
+            font-size: 64px;
             animation: topSideAni 1s ease forwards, bounce 1s 1s infinite alternate;
         }
 
@@ -104,9 +100,9 @@
             animation: leftSideAni 1s ease forwards;
         }
 
-        .about-h3-animation {
+        /* .about-h3-animation {
             animation: leftSideAni 1s ease forwards;
-        }
+        } */
 
         @keyframes leftSideAni {
             0% {
@@ -139,10 +135,16 @@
                 margin-bottom: 30px;
             }
 
-            .section-header h2 {
-                font-size: 30px;
-                font-weight: bold;
-                color: #fff;
+            .project-h1-animation {
+                font-size: 50px;
+            }
+
+            .about-h1-animation {
+                font-size: 50px;
+            }
+
+            .about-h3-animation {
+                font-size: 20px;
             }
         }
     </style>
@@ -152,8 +154,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-shadow">
         <div class="container">
             <div class="d-flex align-items-center">
-                <a href="#"><img src="https://raw.githubusercontent.com/EdrianRosero/EdrianRosero.github.io/refs/heads/main/img/logo.png"
-                    alt="Logo" style="height:50px;" class="navbar-logo" /></a>
+                <a href="#"><img
+                        src="https://raw.githubusercontent.com/EdrianRosero/EdrianRosero.github.io/refs/heads/main/img/logo.png"
+                        alt="Logo" style="height:50px;" class="navbar-logo" /></a>
                 <h1 class="site-name ms-2 mt-2 fw-bold fs-6" style="color:#D70040">EDRIAN JOSHUA ROSERO</h1>
             </div>
             <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
@@ -182,28 +185,33 @@
     <!-- About-->
     <section class="about d-flex align-items-center" id="about">
         <div class="container px-4 px-lg-5 text-center">
-            <h1 class="mb-1 about-h1-animation" style="color:#D70040">Project Page</h1>
-            <h3 class="mb-5 about-h3-animation"><em>Compilation of Coursework for System Administration and
-                    Maintenance</em></h3>
-            <a class="btn btn-dark" href="#projects">View Works</a>
+            <h1 class="mb-1 about-h1-animation" style="color:#D70040">About</h1>
+            <h3 class="mb-5 about-h3-animation"><em>As a passionate UI/UX Designer and Front-End Developer, I am
+                    dedicated to creating intuitive and visually appealing digital experiences. Currently pursuing my IT
+                    studies at the Polytechnic University of the Philippines - Sto. Tomas Campus, I blend creativity
+                    with a keen eye for detail, ensuring that each project not only meets but exceeds user expectations.
+                    My approach is rooted in continuous learning and innovation, as I strive to stay ahead in the
+                    ever-evolving tech landscape.</em></h3>
         </div>
     </section>
 
-
     <!-- Projects-->
-    <section class="project section-padding" id="projects">
+    <section class="project section-padding" style="padding-top: 120px;" id="projects">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-header text-center pb-5">
-                        <h2 class="display-5 fw-bold text-dark">Projects</h2>
+                    <div class="section-header text-center pb-4">
+                        <h1 class="mb-2 project-h1-animation" style="color:#D70040;">Projects</h1>
+                        <h3 class="mb-5 h3"><em>Compilation of Coursework for System Administration and
+                                Maintenance</em></h3>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card text-white text-center bg-dark pb-2">
-                        <a href="https://drive.google.com/file/d/1pBqQF33GPYlFYzEKFSK1gx0oKMlWAkQS/view?usp=sharing" class="text-decoration-none text-white">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2 mb-4">
+                        <a href="https://drive.google.com/file/d/1pBqQF33GPYlFYzEKFSK1gx0oKMlWAkQS/view?usp=sharing"
+                            class="text-decoration-none text-white">
                             <div class="card-body">
                                 <div class="img-area mb-4"><img alt="" class="img-fluid"
                                         src="https://raw.githubusercontent.com/EdrianRosero/EdrianRosero.github.io/refs/heads/main/img/card1.jpeg">
