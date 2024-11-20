@@ -14,7 +14,8 @@ body {
 .navbar-logo,
 .site-name,
 .about-h3-animation,
-.project-h3-animation {
+.project-h3-animation,
+.contact-text {
     animation: leftSideAni 1s ease forwards;
 }
 
@@ -69,7 +70,8 @@ body {
 }
 
 /* Home */
-.home {
+.home,
+.about {
     padding-top: 4rem;
     padding-bottom: 2rem;
     min-height: 100vh;
@@ -130,18 +132,9 @@ body {
 }
 
 /* About */
-.about {
-    min-height: 100vh;
-    position: relative;
-    display: table;
-    width: 100%;
-    height: auto;
-    padding-top: 8rem;
-    padding-bottom: 2rem;
-}
-
 .about-h1-animation,
-.project-h1-animation {
+.project-h1-animation,
+.contact-title {
     font-size: 64px;
     animation: topSideAni 1s ease forwards, bounce 1s 1s infinite alternate;
 }
@@ -232,7 +225,9 @@ body {
         margin-bottom: 30px;
     }
 
-    .about-h1-animation {
+    .about-h1-animation,
+    .project-h1-animation,
+    .contact-title {
         font-size: 50px;
     }
 
@@ -240,17 +235,14 @@ body {
         font-size: 20px;
     }
 
-    .project-h1-animation {
-        font-size: 50px;
-    }
-
     #footer p {
         font-size: 13px;
     }
 }
 
-.contact-title {
-    font-size: 64px;
+.contact {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 .contact-btn {
