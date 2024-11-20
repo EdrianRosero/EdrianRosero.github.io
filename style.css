@@ -248,3 +248,30 @@ body {
         font-size: 13px;
     }
 }
+
+.contact-title {
+    font-size: 64px;
+}
+
+.contact-btn {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgb(218, 222, 226);
+}
+
+.contact-btn i {
+    color: #111;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.btn-lg {
+    font-size: 18px;
+}
