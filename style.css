@@ -11,8 +11,7 @@ body {
 }
 
 /* Nav-Bar */
-.navbar-logo,
-.site-name,
+.navbar-brand,
 .about-h3-animation,
 .project-h3-animation,
 .contact-text {
@@ -54,19 +53,11 @@ body {
     transform: scale(1.07);
 }
 
-.w-100 {
-    height: 100vh;
-}
-
 .navbar-toggler {
     padding: 1px 5px;
     font-size: 18px;
     line-height: 0.3;
     background: #fff;
-}
-
-.navbar-shadow {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Home */
