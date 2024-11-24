@@ -182,7 +182,6 @@ body {
 .marquee-content {
     display: inline-block;
     animation: slide 10s infinite linear;
-    padding-bottom: 3rem;
 }
 
 .marquee-content img {
@@ -211,7 +210,7 @@ body {
 .education img {
     max-width: 100%;
     height: auto;
-    width: 300px;
+    width: 250px;
 }
 
 /* Project */
@@ -270,6 +269,7 @@ body {
 
     .education img {
         width: 150px;
+        margin: 5px;
     }
 
     .home-text-container {
