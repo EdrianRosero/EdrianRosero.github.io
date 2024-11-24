@@ -9,6 +9,7 @@ body {
 .section {
     padding-top: 6.5rem;
     padding-bottom: 6.5rem;
+    scroll-margin-top: 55px;
 }
 
 .navbar-nav {
@@ -177,7 +178,6 @@ body {
 .marquee {
     overflow: hidden;
     white-space: nowrap;
-    padding-bottom: 3rem;
 }
 
 .marquee-content {
@@ -266,11 +266,5 @@ body {
 
     #footer p {
         font-size: 0.8rem;
-    }
-}
-
-@media screen and (max-width: 464px) {
-    .footer-text {
-        font-size: 0.5rem;
     }
 }
