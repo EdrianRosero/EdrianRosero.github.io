@@ -43,8 +43,9 @@
                         <h2>Hello,</h2>
                         <h1>I am <span style="color:#D70040">Edrian</span></h1>
                         <h3><span>UI/UX Designer</span> | <span>Front-End Developer</span> |
-                            <span>IT Student</span></h2>
-                            <a href="404.html" class="btn">RESUME</a>
+                            <span>IT Student</span>
+                        </h3>
+                        <a href="404.html" class="btn">RESUME</a>
                     </div>
                 </div>
                 <div class="col-lg-5 col-sm-12 text-center">
@@ -59,7 +60,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="h1-animation text-center mb-2">About</h1>
-                    <h2 class="h2-animation text-center mb-5">A little bit about me.</h2>
+                    <h2 class="h2-animation text-center mb-5">A little bit about me</h2>
                     <h3 class="mb-5" style="color: #111">As a passionate UI/UX Designer and Front-End
                         Developer, I am
                         dedicated to creating intuitive and visually appealing digital experiences. Currently pursuing
@@ -79,15 +80,24 @@
                 <img src="img/marquee-imgs/javascript.png">
             </div>
         </div>
+        <div class="col-12 education">
+            <h2 class="h2-animation text-center mb-3">Education</h2>
+            <div class="education-images">
+                <img src="img/education-imgs/elementary.png">
+                <img src="img/education-imgs/juniorhs.png">
+                <img src="img/education-imgs/seniorhs.png">
+                <img src="img/education-imgs/college.png">
+            </div>
+        </div>
     </section>
     <!-- Projects-->
-    <section id="projects" class="section section-projects" style="background: linear-gradient(135deg, #F1F1F1, #FFFFFF);">
+    <section id="projects" class="section section-projects"
+        style="background: linear-gradient(135deg, #F1F1F1, #FFFFFF);">
         <div class="container container-projects">
             <h1 class="h1-animation mb-2 text-center">Projects</h1>
-            <h2 class="h2-animation mb-5 text-center">Compilation of Coursework for System
-                Administration and Maintenance</h3>
-                <div id="project-content" class="row d-flex justify-content-center">
-                </div>
+            <h2 class="h2-animation mb-5 text-center">Compilation of Coursework for System Administration and
+                Maintenance</h2>
+            <div id="project-content" class="row d-flex justify-content-center"></div>
         </div>
     </section>
     <!-- Contact -->
@@ -97,42 +107,41 @@
                 <div class="col-12 col-lg-6">
                     <div class="row justify-content-xl-center">
                         <div class="col-12 col-xl-11">
-                            <h1 class="h1-animation mb-3">Contact</h2>
-                                <h2 class="h2-animation mb-5">I’d love to hear from you! Feel free to reach out
-                                    </h3>
-                                    <div class="d-flex mb-5">
+                            <h1 class="h1-animation mb-3">Contact</h1>
+                            <h2 class="h2-animation mb-5">I’d love to hear from you! Feel free to reach out</h2>
+                            <div class="d-flex mb-5">
+                                <div class="me-4 text-primary">
+                                    <img src="img/address.svg" alt="Location" width="32" height="32">
+                                </div>
+                                <div>
+                                    <h4 class="mb-3">Address</h4>
+                                    <p class="mb-0 text-secondary">Calamba City, Laguna, Philippines</p>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-12 col-sm-6">
+                                    <div class="d-flex mb-5 mb-sm-0">
                                         <div class="me-4 text-primary">
-                                            <img src="img/address.svg" alt="Location" width="32" height="32">
+                                            <img src="img/phone.svg" alt="Location" width="32" height="32">
                                         </div>
                                         <div>
-                                            <h4 class="mb-3">Address</h4>
-                                            <p class="mb-0 text-secondary">Calamba City, Laguna, Philippines</p>
+                                            <h4 class="mb-3">Phone</h4>
+                                            <p class="mb-0 text-secondary">09123456789</p>
                                         </div>
                                     </div>
-                                    <div class="row mb-5">
-                                        <div class="col-12 col-sm-6">
-                                            <div class="d-flex mb-5 mb-sm-0">
-                                                <div class="me-4 text-primary">
-                                                    <img src="img/phone.svg" alt="Location" width="32" height="32">
-                                                </div>
-                                                <div>
-                                                    <h4 class="mb-3">Phone</h4>
-                                                    <p class="mb-0 text-secondary">09123456789</p>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="d-flex mb-0">
+                                        <div class="me-4 text-primary">
+                                            <img src="img/email.svg" alt="Location" width="32" height="32">
                                         </div>
-                                        <div class="col-12 col-sm-6">
-                                            <div class="d-flex mb-0">
-                                                <div class="me-4 text-primary">
-                                                    <img src="img/email.svg" alt="Location" width="32" height="32">
-                                                </div>
-                                                <div>
-                                                    <h4 class="mb-3">E-Mail</h4>
-                                                    <p class="mb-0 text-secondary">ejrosero@email.com</p>
-                                                </div>
-                                            </div>
+                                        <div>
+                                            <h4 class="mb-3">E-Mail</h4>
+                                            <p class="mb-0 text-secondary">ejrosero@email.com</p>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -191,12 +200,14 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer id="footer" class="footer text-white d-flex align-items-center justify-content-between"
-        style="background-color: #111;">
-        <a class="footer-brand ps-3 py-3" href="index.html">
-            <img src="img/logo.png" width="60">
-        </a>
-        <div class="footer-text text-center w-100 mt-4">
+    <footer id="footer" class="footer text-white d-flex text-center" style="background-color: #111;">
+        <div class="social-links my-3">
+            <a href="404.html"><img src="img/facebook.png" alt="Facebook" /></a>
+            <a href="https://www.linkedin.com/in/edrian-joshua-rosero-62884824a/" target="_blank"><img
+                    src="img/linkedin.png" alt="Linkedin"></a>
+            <a href="https://github.com/EdrianRosero" target="_blank"><img src="img/github.png" alt="GitHub"></a>
+        </div>
+        <div class="footer-text w-100">
             <p>&copy; 2024 Edrian Joshua Rosero. All rights reserved.</p>
         </div>
     </footer>

@@ -9,7 +9,7 @@ body {
 .section {
     padding-top: 6.5rem;
     padding-bottom: 6.5rem;
-    scroll-margin-top: 55px;
+    scroll-margin-top: 20px;
 }
 
 .navbar-nav {
@@ -72,7 +72,6 @@ body {
     padding: 1px 5px;
     font-size: 18px;
     line-height: 0.3;
-    background: #fff;
 }
 
 /* Home */
@@ -146,10 +145,10 @@ body {
 .profile-img {
     width: 100%;
     border-radius: 15%;
-    animation: bounce 1s infinite alternate;
     height: auto;
     object-fit: cover;
     padding: 2rem 2rem 2rem 2rem;
+    animation: topSideAni 1s ease forwards, bounce 1s 1s infinite alternate;
 }
 
 /* About */
@@ -183,7 +182,7 @@ body {
 .marquee-content {
     display: inline-block;
     animation: slide 10s infinite linear;
-
+    padding-bottom: 3rem;
 }
 
 .marquee-content img {
@@ -199,6 +198,20 @@ body {
     to {
         transform: translateX(-100%);
     }
+}
+
+.education-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.education img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
 }
 
 /* Project */
@@ -224,6 +237,19 @@ body {
     border-radius: 1.5rem;
 }
 
+.footer {
+    flex-direction: column;
+}
+
+.social-links img {
+    width: 25px;
+    height: auto;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+}
+
 /* Responsiveness */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .img-area img {
@@ -240,6 +266,10 @@ body {
     .profile-img {
         width: 200px;
         padding: 1rem 0 0 0;
+    }
+
+    .education img {
+        width: 200px;
     }
 
     .home-text-container {
