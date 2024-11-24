@@ -268,3 +268,9 @@ body {
         font-size: 0.8rem;
     }
 }
+
+@media screen and (max-width: 464px) {
+    .footer-text {
+        font-size: 0.5rem;
+    }
+}
