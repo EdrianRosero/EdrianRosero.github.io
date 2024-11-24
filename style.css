@@ -204,17 +204,18 @@ body {
 /* Project */
 .card {
     border: none;
-    border-radius: 2.25rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 1rem 1rem 0.5rem;
     display: flex;
-    background-color: #f2f0ee;
+    background-color: #e7e7e7;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover {
     transform: translateZ(-20px) scale(0.95);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
 .card img {
@@ -225,10 +226,6 @@ body {
 
 /* Responsiveness */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .card {
-        margin-bottom: 30px;
-    }
-
     .img-area img {
         width: 100%;
     }
@@ -246,20 +243,20 @@ body {
     }
 
     .home-text-container {
-        padding: 2rem 2rem 2rem 2rem;
+        padding: 2rem .5rem 2rem .5rem;
     }
 
     .home-text h2 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .home-text h1,
     .h1-animation {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .h2-animation {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .home-text h3,
@@ -267,11 +264,7 @@ body {
         font-size: 1.1rem;
     }
 
-    .card {
-        margin-bottom: 30px;
-    }
-
     #footer p {
-        font-size: 14px;
+        font-size: 0.8rem;
     }
 }
