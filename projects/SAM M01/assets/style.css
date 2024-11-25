@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F1F1F1;
+}
+
+.section {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    scroll-margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2rem; 
+    text-align: center;
+}
+
+/* Nav-Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    width: 7rem;
+}
+
+/* Home */
+.home {
+    margin-top: 0;
+}
+
+.home-container {
+    height: 0;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video {
+    width: 4000px;
+    height: 100%;
+    pointer-events: none;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+/* Characters */
+.card {
+    padding: .15rem;
+    border-radius: 1rem;
+    margin: .35rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateZ(-20px) scale(0.95);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+/* Trailers & SoundTrack */
+.trailers iframe, .soundTrack iframe {
+    border-radius: 1.5rem;
+}
+
+/* Footer */
+.social-links img {
+    width: 15%;
+    height: auto;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    .home {
+        margin-top: 4.5rem;
+    }
+
+    .navbar-brand {
+        width: 5rem;
+    }
+
+    .characters {
+        padding-top: 4rem;
+    }
+
+    .trailers {
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+    }
+
+    #footer .social-links img {
+        width: 150px;
+    }
+}
