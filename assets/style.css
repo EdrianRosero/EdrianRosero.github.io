@@ -152,18 +152,6 @@ body {
 }
 
 /* About */
-@keyframes topSideAni {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 @keyframes bounce {
     from {
         transform: translateY(0);
@@ -227,7 +215,7 @@ body {
 
 .card:hover {
     transform: translateZ(-20px) scale(0.95);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .card img {
@@ -236,6 +224,7 @@ body {
     border-radius: 1.5rem;
 }
 
+/* Footer */
 .footer {
     flex-direction: column;
 }
