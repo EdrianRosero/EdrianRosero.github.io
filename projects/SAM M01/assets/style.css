@@ -23,7 +23,7 @@ img {
 }
 
 h1 {
-    font-size: 2rem; 
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -36,6 +36,12 @@ h1 {
 
 .navbar-brand {
     width: 7rem;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
 }
 
 /* Home */
@@ -88,7 +94,8 @@ h1 {
 }
 
 /* Trailers & SoundTrack */
-.trailers iframe, .soundTrack iframe {
+.trailers iframe,
+.soundTrack iframe {
     border-radius: 1.5rem;
 }
 
@@ -104,12 +111,12 @@ h1 {
         padding-bottom: 2rem;
     }
 
-    h1 {
-        font-size: 1.5rem; 
+    .home {
+        margin-top: 3.7em;
     }
 
-    .home {
-        margin-top: 4.5rem;
+    h1 {
+        font-size: 1.5rem;
     }
 
     .navbar-brand {
