@@ -20,19 +20,32 @@
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/brand.png">
             </a>
-            <ul class="navbar-nav fs-5 ms-auto mb-2 mb-lg-0 text-center text-lg-start">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#search" style="font-size: 1rem;">Characters</a>
-                </li>
-            </ul>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav fs-5 ms-auto mb-2 mb-lg-0 text-center text-lg-start">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#" style="font-size: 1rem;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#search" style="font-size: 1rem;">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#playlist" style="font-size: 1rem;">Playlist</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- Home -->
     <section class="home mt-0">
         <div class="home-container">
             <iframe class="video"
-                src="https://www.youtube.com/embed/TS_FAtFT-B0?rel=0&controls=0&disablekb=1&mute=1&autoplay=1&loop=1&playlist=TS_FAtFT-B0"
-                title="Rick and Morty Intro [Fanmade]" frameborder="0"
+                src="https://www.youtube.com/embed/Jvb3gcVTfDg?rel=0&controls=0&disablekb=1&mute=1&autoplay=1&loop=1&playlist=Jvb3gcVTfDg"
+                title="Rick and Morty - Intro [4K/60FPS]" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
@@ -59,6 +72,23 @@
     <!-- Gallery -->
     <section class="container">
         <div class="row" id="gallery"></div>
+    </section>
+    <!-- Playlist -->
+    <section id="playlist" class="playlist section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-3 text-white text-center">Rick and Morty:The Playlist</h1>
+                    <div class="music-artists">
+                        <iframe style="border-radius:1.5rem"
+                            src="https://open.spotify.com/embed/playlist/28jyiDg8FWh9PndoSdMSTN?utm_source=generator"
+                            width="100%" height="352" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Footer -->
     <footer id="footer" class="footer text-white d-flex justify-content-center align-items-center"
