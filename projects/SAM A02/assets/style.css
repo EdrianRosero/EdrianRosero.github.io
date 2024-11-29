@@ -59,6 +59,7 @@ h1 {
 }
 
 .navbar-toggler {
+    background-color: #cac9c9;
     padding: 1px 5px;
     font-size: 18px;
     line-height: 0.3;
