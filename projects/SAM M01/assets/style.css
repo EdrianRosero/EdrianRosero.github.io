@@ -93,13 +93,9 @@ h1 {
 }
 
 /* Footer */
-.social-links img {
+.footer-link img {
     width: 15%;
     height: auto;
-}
-
-.social-links a {
-    margin: 0 0.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -129,7 +125,7 @@ h1 {
         padding-bottom: 2rem;
     }
 
-    #footer .social-links img {
+    #footer .footer-link img {
         width: 150px;
     }
 }
